@@ -13,19 +13,19 @@ This repository contains a tester for the `push_swap` project at School 42. Use 
 To run the tester, copy `push_swap_tester.sh` in your `push_swap` folder and compile your `push_swap` and `checker`. Then, use the following command to run the tester with default values:
 
 ```bash
-./push_swap_test.sh
+./push_swap_tester.sh
 ```
 To run the tester with custom options, use a command like the following:
 
 ```bash
-./push_swap_test.sh -r 1000 -o 100 -s 3 -i 10 -v
+./push_swap_tester.sh -r 1000 -o 100 -s 3 -i 10 -v
 ```
 Here, the test begin at 3 and we add 100 until we reach 1000. And every time 10 lists are generated and tested with Valgrind.
 
 To run the tester with another checker, use -c followed by the path of the checker:
 
 ```bash
-./push_swap_test.sh -c checker_linux
+./push_swap_tester.sh -c checker_linux
 ```
 ## Precision
 The value in parenthesis represents the difference with an nlog(n) sorting algorithm to get an idea of its efficiency 
