@@ -46,7 +46,7 @@ done
 
 if [ -z "$push_swap" ]
 then
-  push_swap="../push_swap"
+  push_swap="push_swap"
 fi
 
 if [ -z "$offset" ]
@@ -76,7 +76,7 @@ fi
 
 if [ -z "$checker" ]
 then
-  checker="../checker"
+  checker="checker"
 fi
 
 ps_exec=$(realpath $push_swap)
