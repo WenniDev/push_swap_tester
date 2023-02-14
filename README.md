@@ -4,10 +4,10 @@ This repository contains a tester for the `push_swap` project at School 42. Use 
 
 	-p: path to your push_swap program. Default: push_swap.
 	-c: path to your checker program. Default: checker.
-	-i: number of times your push_swap and checker programs should be run for each range of numbers. Default: 100.
-	-r: range of numbers to sort. Default: 500.
+	-t: number of tests for each range of numbers. Default: 20.
+	-e: max number of iteration. Default: 500.
 	-o: number of elements to add to the range of numbers. Default: 50.
-	-s: start value for the range of numbers. Default: 1.
+	-s: start value for the range of numbers. Default: 0.
 	-v: enables Valgrind to detect memory leaks. Default: disabled.
 ## Usage
 To run the tester, copy `push_swap_tester.sh` in your `push_swap` folder and compile your `push_swap` and `checker`. Then, use the following command to run the tester with default values:

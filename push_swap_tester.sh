@@ -10,12 +10,12 @@ count_bits() {
     echo $bits
 }
 
-while getopts ":p:r:i:o:s:c:v" opt; do
+while getopts ":p:e:t:o:s:c:v" opt; do
   case $opt in
     p)
       push_swap=$OPTARG
       ;;
-    r)
+    e)
       range=$OPTARG
       ;;
     o)
@@ -24,7 +24,7 @@ while getopts ":p:r:i:o:s:c:v" opt; do
     s)
       start=$OPTARG
       ;;
-    i)
+    t)
       iterations=$OPTARG
       ;;
     c)
@@ -56,7 +56,7 @@ fi
 
 if [ -z "$start" ]
 then
-  start=1
+  start=0
 fi
 
 if [ -z "$range" ]
@@ -87,7 +87,7 @@ if [ ! -x "$(command -v $ps_exec )" ] || [ ! -x "$(command -v $ck_exec)" ]; then
     exit 1
 fi
 
-for ((i=$start; i<=$start+$range; i+=$offset)); do
+for ((i=$start; i<=$range; i+=$offset)); do
   line_sum=0
   success_count=0
   min_line=999999
