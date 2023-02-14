@@ -46,7 +46,7 @@ done
 
 if [ -z "$push_swap" ]
 then
-  push_swap="push_swap"
+  push_swap="../push_swap"
 fi
 
 if [ -z "$offset" ]
@@ -76,7 +76,7 @@ fi
 
 if [ -z "$checker" ]
 then
-  checker="checker"
+  checker="../checker"
 fi
 
 ps_exec=$(realpath $push_swap)
@@ -185,4 +185,4 @@ if [ "$(echo -n "$empty_output" | grep -c "Error")" -eq 0 ]; then
 else
     echo -e "\033[31m 🔴 Empty argument does not return nothing"
 fi
-echo "\033[0m"
+echo -e "\033[0m"
