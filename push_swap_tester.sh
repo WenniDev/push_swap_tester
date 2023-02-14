@@ -185,4 +185,4 @@ if [ "$(echo -n "$empty_output" | grep -c "Error")" -eq 0 ]; then
 else
     echo -e "\033[31m 🔴 Empty argument does not return nothing"
 fi
-echo ""
+echo "\033[0m"
