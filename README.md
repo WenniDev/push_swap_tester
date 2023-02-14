@@ -4,7 +4,7 @@ This repository contains a tester for the `push_swap` project at School 42. Use 
 
 	-p: path to your push_swap program. Default: push_swap.
 	-c: path to your checker program. Default: checker.
-	-i: number of times your push_swap and checker programs should be run for each range of numbers. Default: 20.
+	-i: number of times your push_swap and checker programs should be run for each range of numbers. Default: 100.
 	-r: range of numbers to sort. Default: 500.
 	-o: number of elements to add to the range of numbers. Default: 50.
 	-s: start value for the range of numbers. Default: 1.
@@ -20,7 +20,7 @@ To run the tester with custom options, use a command like the following:
 ```bash
 ./push_swap_tester.sh -r 1000 -o 100 -s 3 -i 10 -v
 ```
-Here, the test begin at 3 and we add 100 until we reach 1000. And every time 10 lists are generated and tested with Valgrind.
+Here, the test begins at 3 and we add 100 until we reach 1000. And every time 10 lists are generated and tested with Valgrind.
 
 To run the tester with another checker, use -c followed by the path of the checker:
 
