@@ -129,7 +129,7 @@ for ((i=$start; i<=$start+$range; i+=$offset)); do
   else
     bits=$(count_bits $i)
   fi
-  echo -e "\033[0;36m Taille liste: $i"
+  echo -e "\033[0;36m Taille liste: $i  ($iterations tests)"
   if [ "$line_avg" -gt "$(echo "$bits*$i" | bc)" ]; then
     echo -e "\033[0;33m 🟠 Moyenne d'étapes:  \033[0;33m"$line_avg" (+$(echo "$line_avg - $bits*$i" | bc))"
   else
