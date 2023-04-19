@@ -53,6 +53,6 @@ The majority of the evaluation is based on the number of steps required to sort 
 	 - 2 points if the number of steps is less than 10000
 	 - 1 points if the number of steps is less than 11500
 
-	According to unreliable sources, we need to get at least 84 points to pass.
+	According to unreliable sources, we need to get at least 2 points to pass.
 
 The tester was created by [jopadova](https://profile.intra.42.fr/users/jopadova). It is distributed under the MIT license. See the LICENSE file for more information.
